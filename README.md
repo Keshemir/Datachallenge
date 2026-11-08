@@ -1,5 +1,7 @@
 # CQA — оценка качества диалогов
 
+Проект команды **Bibigon**.
+
 Рабочее приложение для Freedom Broker Data Challenge: React + TypeScript + Vite,
 FastAPI + Python, SQLite и LLM через OpenAI-совместимый API, включая OpenRouter.
 
