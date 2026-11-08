@@ -1,0 +1,12 @@
+{$DOMAIN} {
+    request_body {
+        max_size 26MB
+    }
+    header -Server
+    reverse_proxy app:8000 {
+        # Caddy overwrites X-Forwarded-*; the application port is not published.
+        transport http {
+            response_header_timeout 300s
+        }
+    }
+}

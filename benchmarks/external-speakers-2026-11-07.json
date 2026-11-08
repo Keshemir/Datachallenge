@@ -1,0 +1,205 @@
+{
+  "scope": "Speaker roles from reference transcripts only; NOT CQA scores, STT or Russian/Kazakh accuracy",
+  "dataset": "apptek-com/apptek_callcenter_dialogues",
+  "source_url": "https://huggingface.co/datasets/apptek-com/apptek_callcenter_dialogues",
+  "revision": "b98967d9946f7f59f58d08624a2a00fe98fe0219",
+  "metadata_path": "diarization/en-US_General/metadata.jsonl",
+  "metadata_sha256": "2c37db51246dd8be8c3e1946afd8ee5ad15ef5857db4e1a39393abc711524d72",
+  "license": "CC-BY-SA-4.0",
+  "selection": "First filename in each of six preselected domains, complete call, no outcome filtering",
+  "language": "EN",
+  "model": "deepseek/deepseek-v4.1-flash-1017",
+  "prompt_sha256": "06a97f00d080ccd3ece857f7cf4bf7eaca436ee85b2fafeed879fed5f80699cd",
+  "cases": [
+    {
+      "id": "audio/en_US_General_Banking_1584540.wav",
+      "domain": "banking",
+      "lines": 77,
+      "expected_distribution": {
+        "operator": 50,
+        "client": 27
+      },
+      "http_status": 200,
+      "source_preserved": true,
+      "correct": 77,
+      "review_lines": 0,
+      "mismatches": [],
+      "seconds": 11.93
+    },
+    {
+      "id": "audio/en_US_General_Finance_1584557.wav",
+      "domain": "finance",
+      "lines": 94,
+      "expected_distribution": {
+        "operator": 67,
+        "client": 27
+      },
+      "http_status": 200,
+      "source_preserved": true,
+      "correct": 94,
+      "review_lines": 0,
+      "mismatches": [],
+      "seconds": 15.26
+    },
+    {
+      "id": "audio/en_US_General_Insurance_1584560.wav",
+      "domain": "insurance",
+      "lines": 88,
+      "expected_distribution": {
+        "operator": 58,
+        "client": 30
+      },
+      "http_status": 200,
+      "source_preserved": true,
+      "correct": 88,
+      "review_lines": 0,
+      "mismatches": [],
+      "seconds": 18.23
+    },
+    {
+      "id": "audio/en_US_General_Telecom_1584567.wav",
+      "domain": "telecom",
+      "lines": 172,
+      "expected_distribution": {
+        "operator": 95,
+        "client": 77
+      },
+      "http_status": 200,
+      "source_preserved": true,
+      "correct": 167,
+      "review_lines": 1,
+      "mismatches": [
+        {
+          "line": 62,
+          "expected": "operator",
+          "actual": "client",
+          "needs_review": false
+        },
+        {
+          "line": 67,
+          "expected": "operator",
+          "actual": "client",
+          "needs_review": false
+        },
+        {
+          "line": 122,
+          "expected": "client",
+          "actual": "",
+          "needs_review": true
+        },
+        {
+          "line": 151,
+          "expected": "operator",
+          "actual": "client",
+          "needs_review": false
+        },
+        {
+          "line": 153,
+          "expected": "operator",
+          "actual": "client",
+          "needs_review": false
+        }
+      ],
+      "seconds": 35.73
+    },
+    {
+      "id": "audio/en_US_General_Retail_1584565.wav",
+      "domain": "retail",
+      "lines": 81,
+      "expected_distribution": {
+        "operator": 46,
+        "client": 35
+      },
+      "http_status": 200,
+      "source_preserved": true,
+      "correct": 81,
+      "review_lines": 4,
+      "mismatches": [],
+      "seconds": 22.8
+    },
+    {
+      "id": "audio/en_US_General_Travel_1586358.wav",
+      "domain": "travel",
+      "lines": 139,
+      "expected_distribution": {
+        "client": 77,
+        "operator": 62
+      },
+      "http_status": 200,
+      "source_preserved": true,
+      "correct": 131,
+      "review_lines": 2,
+      "mismatches": [
+        {
+          "line": 1,
+          "expected": "client",
+          "actual": "",
+          "needs_review": true
+        },
+        {
+          "line": 2,
+          "expected": "client",
+          "actual": "",
+          "needs_review": true
+        },
+        {
+          "line": 22,
+          "expected": "client",
+          "actual": "operator",
+          "needs_review": false
+        },
+        {
+          "line": 43,
+          "expected": "operator",
+          "actual": "client",
+          "needs_review": false
+        },
+        {
+          "line": 63,
+          "expected": "operator",
+          "actual": "client",
+          "needs_review": false
+        },
+        {
+          "line": 65,
+          "expected": "operator",
+          "actual": "client",
+          "needs_review": false
+        },
+        {
+          "line": 89,
+          "expected": "operator",
+          "actual": "client",
+          "needs_review": false
+        },
+        {
+          "line": 123,
+          "expected": "operator",
+          "actual": "client",
+          "needs_review": false
+        }
+      ],
+      "seconds": 44.23
+    }
+  ],
+  "summary": {
+    "attempted_calls": 6,
+    "successful_calls": 6,
+    "lines": 651,
+    "correct": 638,
+    "line_accuracy": 0.9800307219662059,
+    "exact_calls": 4,
+    "review_lines": 7,
+    "mismatches_flagged_for_review": 3,
+    "mismatches_not_flagged_for_review": 10
+  },
+  "limitations": [
+    "Six selected full English calls, one accent group, one model run; not a representative accuracy estimate.",
+    "Reference transcripts only. No audio transcription or diarization was tested in this run.",
+    "Reference roles are external dataset annotations, not expert scores for the Freedom checklist.",
+    "No timestamp, speaker ID, role label, domain, or expected role was included in the inference request.",
+    "Review flags are not calibrated confidence. Errors not flagged for review remain possible.",
+    "No prompt tuning or case exclusions were performed after seeing these results.",
+    "Source-preservation verifies text integrity, not semantic accuracy."
+  ]
+}

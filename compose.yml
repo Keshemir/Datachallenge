@@ -1,0 +1,45 @@
+services:
+  app:
+    build: .
+    restart: unless-stopped
+    env_file:
+      - ${CQA_SERVER_ENV:-.env.production}
+    environment:
+      CQA_ENV: production
+      CQA_ALLOWED_ORIGINS: https://${DOMAIN:?Set DOMAIN to your public hostname}
+      CQA_DB_PATH: /app/data/cqa.sqlite3
+      CQA_FRONTEND_DIR: /app/frontend
+    volumes:
+      - cqa_data:/app/data
+    read_only: true
+    tmpfs:
+      - /tmp:size=67108864,mode=1777,noexec,nosuid
+    cap_drop: [ALL]
+    security_opt: [no-new-privileges:true]
+    mem_limit: 1g
+    pids_limit: 128
+    networks: [private]
+    # No host port. Only Caddy can reach this service from the internet.
+
+  web:
+    image: caddy:2-alpine
+    restart: unless-stopped
+    ports:
+      - "80:80"
+      - "443:443"
+    environment:
+      DOMAIN: ${DOMAIN:?Set DOMAIN to your public hostname}
+    volumes:
+      - ./deploy/Caddyfile:/etc/caddy/Caddyfile:ro
+      - caddy_data:/data
+      - caddy_config:/config
+    depends_on: [app]
+    security_opt: [no-new-privileges:true]
+    networks: [private]
+
+networks:
+  private:
+volumes:
+  cqa_data:
+  caddy_data:
+  caddy_config:

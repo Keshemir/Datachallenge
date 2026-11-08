@@ -1,0 +1,360 @@
+{
+  "started_at": "2026-11-07T12:37:15.753420+00:00",
+  "stt_model": "elevenlabs/scribe-v2",
+  "role_model": "deepseek/deepseek-v4.1-flash-1017",
+  "scope": "Exactly two selected samples per dataset; diagnostic only, no checklist Ground Truth",
+  "normalization": "Unicode NFKC, lowercase, Russian ё->е, Unicode word tokens, punctuation removed. CER omits spaces. No verbalization of digits or removal of fillers. Not AppTek official WER protocol.",
+  "role_protocol": "Reference transcript only; no reference role, speaker ID, timestamp or scenario passed to classifier. Accuracy per source line. ABCD actions retained as system reference labels.",
+  "manifest_sha256": "6fc030780f358222c2aa34c55e72ad1248987aa89868b67b4d7f765129ee2de0",
+  "cases": [
+    {
+      "dataset": "fleurs",
+      "id": "ru_ru-10000611681338527501",
+      "language": "RU",
+      "revision": "70bb2e84b976b7e960aa89f1c648e09c59f894dd",
+      "source_path": "data/ru_ru/audio/test.tar.gz#test/10000611681338527501.wav",
+      "duration": 16.92,
+      "audio_sha256": "08d7f2cd51bb0de6d00655368d9926888930a8a2482ee48153c1b099dcc2a7e4",
+      "split": "test",
+      "license": "CC-BY-4.0",
+      "reference_sha256": "b1e38de06d25585884daaca8317671394b8244dbf5657caf205d4cb74c558f35",
+      "stt": {
+        "dataset": "fleurs",
+        "id": "ru_ru-10000611681338527501",
+        "status": "ok",
+        "speaker_count": 1,
+        "has_unassigned_speech": false,
+        "record_id": "c68c1040-3a51-464e-9306-6a3f57fb2a6a",
+        "reference_words": 21,
+        "word_edits": 0,
+        "wer": 0.0,
+        "reference_characters": 134,
+        "character_edits": 0,
+        "cer": 0.0,
+        "seconds": 2.67
+      },
+      "stt_setup_attempt": {
+        "status": "failed",
+        "error": "OperationalError",
+        "seconds": 0.03
+      }
+    },
+    {
+      "dataset": "fleurs",
+      "id": "kk_kz-10021401141536914918",
+      "language": "KZ",
+      "revision": "70bb2e84b976b7e960aa89f1c648e09c59f894dd",
+      "source_path": "data/kk_kz/audio/test.tar.gz#test/10021401141536914918.wav",
+      "duration": 14.88,
+      "audio_sha256": "dd15ff8d2a19ecf7bc4a64afc849e02af801a630b92186c23ba07a67beb93301",
+      "split": "test",
+      "license": "CC-BY-4.0",
+      "reference_sha256": "0c7e65a4c5978a549daffcaf5698b1302f1241c4bf39e45950b051b5aaddb611",
+      "stt": {
+        "dataset": "fleurs",
+        "id": "kk_kz-10021401141536914918",
+        "status": "ok",
+        "speaker_count": 1,
+        "has_unassigned_speech": false,
+        "record_id": "ae932164-e04a-41e2-a175-59bd8b5380cc",
+        "reference_words": 21,
+        "word_edits": 0,
+        "wer": 0.0,
+        "reference_characters": 164,
+        "character_edits": 0,
+        "cer": 0.0,
+        "seconds": 3.89
+      },
+      "stt_setup_attempt": {
+        "status": "failed",
+        "error": "OperationalError",
+        "seconds": 0.0
+      }
+    },
+    {
+      "dataset": "ksc2",
+      "id": "5f5af5084a3be",
+      "language": "KZ",
+      "revision": "cececbec1049f93f34a7421552500da01971ead8",
+      "source_path": "ISSAI_KSC2.tar.gz.partaa#ISSAI_KSC2\\Test\\crowdsourced\\5f5af5084a3be.flac",
+      "duration": 7.2533125,
+      "audio_sha256": "dbd466460d5ce09087fd577992376bfca1721cd035134e81dfeccd935046ba94",
+      "split": "Test/crowdsourced",
+      "license": "HF card MIT; author repository CC-BY-4.0; local evaluation only, archive terms unresolved",
+      "reference_sha256": "9230ec91f2f66ab13d3dfa55ed289538f96cec7822b9aa85cbd9c679a53b84f7",
+      "stt": {
+        "dataset": "ksc2",
+        "id": "5f5af5084a3be",
+        "status": "ok",
+        "speaker_count": 1,
+        "has_unassigned_speech": false,
+        "record_id": "9dedc933-a5a5-4080-aac5-134c35047ce1",
+        "reference_words": 14,
+        "word_edits": 0,
+        "wer": 0.0,
+        "reference_characters": 67,
+        "character_edits": 0,
+        "cer": 0.0,
+        "seconds": 1.68
+      },
+      "stt_setup_attempt": {
+        "status": "failed",
+        "error": "OperationalError",
+        "seconds": 0.0
+      }
+    },
+    {
+      "dataset": "ksc2",
+      "id": "5f5f7dc44d04e",
+      "language": "KZ",
+      "revision": "cececbec1049f93f34a7421552500da01971ead8",
+      "source_path": "ISSAI_KSC2.tar.gz.partaa#ISSAI_KSC2\\Test\\crowdsourced\\5f5f7dc44d04e.flac",
+      "duration": 8.636,
+      "audio_sha256": "c46e1e78a34abf787907b46669c75b3fb6b5a00a3af3d749f9a59e35325bfe7f",
+      "split": "Test/crowdsourced",
+      "license": "HF card MIT; author repository CC-BY-4.0; local evaluation only, archive terms unresolved",
+      "reference_sha256": "9066743369ecfb56090fe91b58b38ed87dbf3da405b5b356be7148baddc357b6",
+      "stt": {
+        "dataset": "ksc2",
+        "id": "5f5f7dc44d04e",
+        "status": "ok",
+        "speaker_count": 1,
+        "has_unassigned_speech": false,
+        "record_id": "be1517ea-1beb-4ec1-a0f6-1edfb2572b3c",
+        "reference_words": 13,
+        "word_edits": 0,
+        "wer": 0.0,
+        "reference_characters": 109,
+        "character_edits": 0,
+        "cer": 0.0,
+        "seconds": 1.92
+      },
+      "stt_setup_attempt": {
+        "status": "failed",
+        "error": "OperationalError",
+        "seconds": 0.0
+      }
+    },
+    {
+      "dataset": "apptek",
+      "id": "en_US_General_Banking_1586157",
+      "language": "EN",
+      "revision": "b98967d9946f7f59f58d08624a2a00fe98fe0219",
+      "source_path": "diarization/en-US_General/audio/en_US_General_Banking_1586157.wav",
+      "duration": 550.0,
+      "audio_sha256": "3b9bcfc05d060f7ca67f71039946cd81eb97ecad51c6ff1545fbe85dd4966061",
+      "domain": "banking",
+      "split": "test",
+      "license": "CC-BY-SA-4.0",
+      "reference_sha256": "cdd6d81d48b25ab4d481b677da0edf69eba99e4157d9e3e2491e64303e838a44",
+      "stt": {
+        "dataset": "apptek",
+        "id": "en_US_General_Banking_1586157",
+        "status": "ok",
+        "speaker_count": 2,
+        "has_unassigned_speech": false,
+        "record_id": "161a51e5-d7a7-45eb-b7d5-707f4b0c1eb6",
+        "reference_words": 1234,
+        "word_edits": 68,
+        "wer": 0.055105348460291734,
+        "reference_characters": 4969,
+        "character_edits": 176,
+        "cer": 0.03541960152948279,
+        "seconds": 24.52
+      },
+      "roles": {
+        "status": "ok",
+        "lines": 118,
+        "correct": 113,
+        "accuracy": 0.9576271186440678,
+        "review_lines": 1,
+        "source_preserved": true,
+        "mismatches": [
+          {
+            "line": 35,
+            "expected": "client",
+            "actual": "",
+            "needs_review": true
+          },
+          {
+            "line": 44,
+            "expected": "client",
+            "actual": "operator",
+            "needs_review": false
+          },
+          {
+            "line": 87,
+            "expected": "client",
+            "actual": "operator",
+            "needs_review": false
+          },
+          {
+            "line": 101,
+            "expected": "operator",
+            "actual": "client",
+            "needs_review": false
+          },
+          {
+            "line": 115,
+            "expected": "operator",
+            "actual": "client",
+            "needs_review": false
+          }
+        ]
+      },
+      "stt_setup_attempt": {
+        "status": "failed",
+        "error": "OperationalError",
+        "seconds": 0.02
+      }
+    },
+    {
+      "dataset": "apptek",
+      "id": "en_US_General_Insurance_1586742",
+      "language": "EN",
+      "revision": "b98967d9946f7f59f58d08624a2a00fe98fe0219",
+      "source_path": "diarization/en-US_General/audio/en_US_General_Insurance_1586742.wav",
+      "duration": 381.9264375,
+      "audio_sha256": "8bb174996233666a6008b5969b8d2dcb6ce7d952fc41891fe8e40d72bdd1ebcf",
+      "domain": "insurance",
+      "split": "test",
+      "license": "CC-BY-SA-4.0",
+      "reference_sha256": "49fcd3e169ea9c7067a5120f550fef3ce9943b7c9a6c3d2fe09f4c01cccd8a13",
+      "stt": {
+        "dataset": "apptek",
+        "id": "en_US_General_Insurance_1586742",
+        "status": "ok",
+        "speaker_count": 2,
+        "has_unassigned_speech": false,
+        "record_id": "1df9f347-66c1-4464-9bea-c5a1f5cca381",
+        "reference_words": 888,
+        "word_edits": 92,
+        "wer": 0.1036036036036036,
+        "reference_characters": 3666,
+        "character_edits": 244,
+        "cer": 0.06655755591925805,
+        "seconds": 18.92
+      },
+      "roles": {
+        "status": "ok",
+        "lines": 53,
+        "correct": 47,
+        "accuracy": 0.8867924528301887,
+        "review_lines": 6,
+        "source_preserved": true,
+        "mismatches": [
+          {
+            "line": 1,
+            "expected": "operator",
+            "actual": "",
+            "needs_review": true
+          },
+          {
+            "line": 2,
+            "expected": "operator",
+            "actual": "",
+            "needs_review": true
+          },
+          {
+            "line": 3,
+            "expected": "operator",
+            "actual": "",
+            "needs_review": true
+          },
+          {
+            "line": 51,
+            "expected": "operator",
+            "actual": "",
+            "needs_review": true
+          },
+          {
+            "line": 52,
+            "expected": "client",
+            "actual": "",
+            "needs_review": true
+          },
+          {
+            "line": 53,
+            "expected": "operator",
+            "actual": "",
+            "needs_review": true
+          }
+        ]
+      },
+      "stt_setup_attempt": {
+        "status": "failed",
+        "error": "OperationalError",
+        "seconds": 0.01
+      }
+    },
+    {
+      "dataset": "abcd",
+      "id": "3592",
+      "language": "EN",
+      "revision": "6b8700ce67c6b37b062dd7a60abc76d7ef832a97",
+      "source_path": "data/abcd_sample.json",
+      "license": "MIT",
+      "split": "author sample",
+      "reference_sha256": "b3fa6971883f58313f7c2cff4cb91738e03e28ecd501c7ad26717c2300ffff6b",
+      "roles": {
+        "status": "ok",
+        "lines": 29,
+        "correct": 28,
+        "accuracy": 0.9655172413793104,
+        "review_lines": 0,
+        "source_preserved": true,
+        "mismatches": [
+          {
+            "line": 1,
+            "expected": "operator",
+            "actual": "client",
+            "needs_review": false
+          }
+        ]
+      }
+    },
+    {
+      "dataset": "abcd",
+      "id": "9489",
+      "language": "EN",
+      "revision": "6b8700ce67c6b37b062dd7a60abc76d7ef832a97",
+      "source_path": "data/abcd_sample.json",
+      "license": "MIT",
+      "split": "author sample",
+      "reference_sha256": "85ab9820fcceeba285566490c2a25abd914397f854802140196b87e722b8be92",
+      "roles": {
+        "status": "ok",
+        "lines": 21,
+        "correct": 19,
+        "accuracy": 0.9047619047619048,
+        "review_lines": 0,
+        "source_preserved": true,
+        "mismatches": [
+          {
+            "line": 6,
+            "expected": "system",
+            "actual": "operator",
+            "needs_review": false
+          },
+          {
+            "line": 11,
+            "expected": "client",
+            "actual": "operator",
+            "needs_review": false
+          }
+        ]
+      }
+    }
+  ],
+  "finished_at": "2026-11-07T12:38:45.574298+00:00",
+  "setup_note": "Initial STT wrapper omitted initialization of the isolated SQLite schema and failed before provider requests. Schema initialized; all six audio cases then transcribed successfully. Role requests were not rerun.",
+  "limitations": [
+    "Two selected samples per dataset only; not a representative accuracy estimate.",
+    "STT and role classification tested separately: role inference received reference text, not STT hypotheses.",
+    "No Freedom checklist judgments or organizer Ground Truth comparison in this run.",
+    "Speaker counts are observations, not a measured diarization error rate.",
+    "AppTek uses simple normalization, not its official scoring protocol; fillers and number formatting can affect WER.",
+    "KSC2 samples are two crowdsourced test utterances; do not represent all Kazakh speech.",
+    "External audio stored only in the isolated benchmark database, not the user conversation list."
+  ]
+}
