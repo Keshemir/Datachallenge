@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "team_name": "ClearCall",
+  "team_name": "Bibigon",
   "model": {
     "mode": "external_api",
     "name": "deepseek/deepseek-v4.1-flash-1017"

@@ -75,7 +75,7 @@ PROD containing 10 control chats, original conversation IDs, all eight official 
 one-based evidence indices across every original role, and explicit error records.
 The Submission screen exports saved AI evaluations for an immutable imported dataset
 manifest and selected compatible checklist. Missing results are disclosed; export performs
-no inference or Git publishing. The user delegated the team name; ClearCall is the default.
+no inference or Git publishing. The team name is Bibigon; it is the default on the Submission screen.
 
 Organizer clarification supplied by the user: consider an omnichannel system. Do not infer
 completed identity verification from app login, chat presence, or a phone call. Explicit

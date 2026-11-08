@@ -11,7 +11,7 @@ export function Submission({ checklists }: { checklists: ChecklistRecord[] }) {
   const [loadRetry, setLoadRetry] = useState(0);
   const [dataset, setDataset] = useState('');
   const [split, setSplit] = useState('dev');
-  const [team, setTeam] = useState('ClearCall');
+  const [team, setTeam] = useState('Bibigon');
   const [rubric, setRubric] = useState(checklists[checklists.length - 1]?.hash ?? '');
   const [preview, setPreview] = useState<Preview | null>(null);
   const [allowErrors, setAllowErrors] = useState(false);

@@ -40,7 +40,7 @@ def setup(store_path, conversation, checklist, judgments, count=10):
         dataset_hash=dataset_hash,
         checklist_hash=checklist_hash,
         split="prod",
-        team_name="ClearCall",
+        team_name="Bibigon",
     )
     return store, conversations, request
 

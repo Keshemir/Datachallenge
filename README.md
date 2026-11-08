@@ -364,7 +364,7 @@ MAE итогового балла и precision/recall N/A и грубых оши
 ### Экспорт для организаторов · JSON 1.0
 
 Раздел **«Сдача»** проверяет исходный набор и выгружает `results.json`.
-Название команды по выбору пользователя делегировано ассистенту: ClearCall; поле доступно для изменения.
+Название команды — Bibigon; поле доступно для изменения.
 DEV должен содержать 60 чатов и 5 звонков, PROD — ровно 10 чатов. Состав фиксируется
 при импорте ответа API организаторов; фильтры интерфейса, добавленные вручную диалоги,
 повторные расшифровки и QA-апелляции не подменяют исходный набор.
@@ -388,8 +388,8 @@ boolean/null/исходная ступень шкалы, не взвешенны
 CLI создаёт правильные папки и файл в UTF-8 без BOM; LLM не вызывает:
 
 ```powershell
-.\.venv\Scripts\python.exe -m cqa.submission --dataset tmp/dev-dataset.json --split dev --team-name ClearCall --checklist-hash <хеш_версии> --check
-.\.venv\Scripts\python.exe -m cqa.submission --dataset tmp/dev-dataset.json --split dev --team-name ClearCall --checklist-hash <хеш_версии> --include-errors
+.\.venv\Scripts\python.exe -m cqa.submission --dataset tmp/dev-dataset.json --split dev --team-name Bibigon --checklist-hash <хеш_версии> --check
+.\.venv\Scripts\python.exe -m cqa.submission --dataset tmp/dev-dataset.json --split dev --team-name Bibigon --checklist-hash <хеш_версии> --include-errors
 ```
 
 Хеш версии доступен в `/api/checklists` после авторизации; через интерфейс он не нужен.
